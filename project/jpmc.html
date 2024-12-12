@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Step Intern Roadmap</title>
+  <style>
+    :root {
+      --primary-color: #0B60B0;
+      --background-color: #40A2D8;
+      --accent-color: #F0EDCF;
+      --font-color: #000000;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://e0.pxfuel.com/wallpapers/336/16/desktop-wallpaper-gradient-blue-pastel-blue-gradient.jpg');
+      color: var(--font-color);
+      font-family: var(--font);
+      display:flex;
+      background-size:cover;
+      background-position:center ;
+      justify-content: center;
+      padding: 20px;
+      margin: 0; /* Add this to remove default body margin */
+    }
+
+    .timeline {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+      height: 300px;
+      position: sticky; /* Make the timeline box sticky */
+      top: 350px; /* Stick to the top of the viewport */
+      z-index: 1; /* Ensure it appears above other content */
+    }
+
+    
+    .timeline1 {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+      
+      position: sticky; /* Make the timeline box sticky */
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 1; /* Ensure it appears above other content */
+    }
+
+    .img{
+        width: 350px;
+        align-items: center;
+        
+    }
+
+    .card {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child(even) {
+      padding: 30px 30px 30px 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      border: solid var(--accent-color);
+    }
+
+    .card:nth-child(odd)::before {
+      left: 0px;
+      top: -4.5px;
+      bottom: -4.5px;
+      border-width: 5px 0 5px 5px;
+      border-radius: 50px 0 0 50px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+
+    .card:nth-child(even)::before {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-width: 5px 5px 5px 0;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .card:first-child::before {
+      border-top: 0;
+      border-top-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(odd)::before {
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(even)::before {
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      background: var(--accent-color); /* Light Beige */
+      color: var(--font-color);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--background-color);
+      border-radius: 50%;
+      border: 3px solid var(--primary-color);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -25px;
+      transition: all 0.3s ease;
+    }
+
+    /* Adjust bullet point position for even cards */
+    .card:nth-child(even) > .info > .title::before {
+      left: auto;
+      right: -25px;
+    }
+
+    /* Add hover effects */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Smooth transition for bullet points */
+    .title::before {
+      transition: all 0.3s ease;
+    }
+
+    .info p {
+      margin-top: 10px;
+    }
+    /* Timeline heading */
+.timeline-heading {
+  text-align: center;
+  top: 50%;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to create space between the heading and the cards */
+  color: var(--accent-color); /* Adjust color if needed */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="timeline">
+    <h1 class="timeline-heading">JP Morgan Intern Roadmap</h1>
+    <!-- Rest of the content --> <t></t>
+    <img class="img" src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*NK2hmuq_GaccMB-mA_6pyw.jpeg" alt="step intern">
+    </div>
+  <div class="timeline1">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 1: Research and Understand the Code for Good Program</h3>
+          <p>Visit JPMC's official website and explore the Code for Good program page. <br><br>
+            Understand the program's objectives, eligibility criteria, and application. <br><br>
+            Familiarize yourself with the types of projects and causes the program supports.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 2: Enhance Your Coding Skills</h3>
+          <p>Strengthen your coding skills in relevant programming languages and technologies. <br><br>
+            Focus on languages commonly used in software development, such as Java, Python, JavaScript, etc. <br><br>
+            Practice solving coding challenges and algorithms, as these are often part of the selection process.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 3: Build a Strong Portfolio</h3>
+          <p>Develop a portfolio showcasing your coding projects, including any relevant experience or contributions to open-source projects. <br><br>
+            Include projects that demonstrate your ability to solve real-world problems or projects related to social impact and community service.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 4: Prepare for the Application Process</h3>
+          <p>Tailor your resume and cover letter to highlight relevant skills, experiences, and your passion for social impact. <br><br>
+            Be ready to articulate your motivations for applying to the Code for Good program and how you align with its mission. <br><br>
+            Prepare for technical interviews by practicing coding challenges, data structures, algorithms, and problem-solving techniques.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 5: Apply and Network</h3>
+          <p>Keep an eye on JPMC's career website for internship openings related to the Code for Good program. <br><br>
+            Submit a well-crafted application before the deadline, ensuring all required documents are included. <br><br>
+            Leverage your network by connecting with JPMC employees on professional platforms like LinkedIn and attending networking events or career fairs.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

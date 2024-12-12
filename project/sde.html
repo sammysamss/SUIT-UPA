@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Development Engineer Roadmap</title>
+  <style>
+    :root {
+      --primary-color: #0B60B0;
+      --background-color: #40A2D8;
+      --accent-color: #F0EDCF;
+      --font-color: #000000;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://e0.pxfuel.com/wallpapers/336/16/desktop-wallpaper-gradient-blue-pastel-blue-gradient.jpg');
+      color: var(--font-color);
+      font-family: var(--font);
+      display:flex;
+      background-size:cover;
+      background-position:center ;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .timeline {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .card {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child(even) {
+      padding: 30px 30px 30px 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      border: solid var(--accent-color);
+    }
+
+    .card:nth-child(odd)::before {
+      left: 0px;
+      top: -4.5px;
+      bottom: -4.5px;
+      border-width: 5px 0 5px 5px;
+      border-radius: 50px 0 0 50px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+
+    .card:nth-child(even)::before {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-width: 5px 5px 5px 0;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .card:first-child::before {
+      border-top: 0;
+      border-top-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(odd)::before {
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(even)::before {
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      background: var(--accent-color); /* Light Beige */
+      color: var(--font-color);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--background-color);
+      border-radius: 50%;
+      border: 3px solid var(--primary-color);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -25px;
+      transition: all 0.3s ease;
+    }
+
+    /* Adjust bullet point position for even cards */
+    .card:nth-child(even) > .info > .title::before {
+      left: auto;
+      right: -25px;
+    }
+
+    /* Add hover effects */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Smooth transition for bullet points */
+    .title::before {
+      transition: all 0.3s ease;
+    }
+
+    .info p {
+      margin-top: 10px;
+    }
+    /* Timeline heading */
+.timeline-heading {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to create space between the heading and the cards */
+  color: var(--accent-color); /* Adjust color if needed */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="timeline">
+    <h1 class="timeline-heading">Software Development Engineer Roadmap</h1>
+    <!-- Rest of the content -->
+  <div class="timeline">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 1: Learn Data Structures and Algorithms</h3>
+          <p>Master the fundamental concepts of data structures and algorithms.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 2: Gain Proficiency in Programming Languages</h3>
+          <p>Learn programming languages like Python, Java, or C++.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 3: Build Projects and Apply Knowledge</h3>
+          <p>Practice by building real-world projects and applying your knowledge.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 4: Learn Web Development Technologies</h3>
+          <p>Explore web development technologies like HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 5: Specialize and Continuously Learn</h3>
+          <p>Choose a specialization such as front-end, back-end, or full-stack development, and continue learning new technologies.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

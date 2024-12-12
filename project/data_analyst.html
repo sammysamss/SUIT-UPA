@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Analyst Roadmap</title>
+  <style>
+    :root {
+      --primary-color: #0B60B0;
+      --background-color: #40A2D8;
+      --accent-color: #F0EDCF;
+      --font-color: #000000;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://e0.pxfuel.com/wallpapers/336/16/desktop-wallpaper-gradient-blue-pastel-blue-gradient.jpg');
+      color: var(--font-color);
+      font-family: var(--font);
+      display:flex;
+      background-size:cover;
+      background-position:center ;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .timeline {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .card {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child(even) {
+      padding: 30px 30px 30px 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      border: solid var(--accent-color);
+    }
+
+    .card:nth-child(odd)::before {
+      left: 0px;
+      top: -4.5px;
+      bottom: -4.5px;
+      border-width: 5px 0 5px 5px;
+      border-radius: 50px 0 0 50px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+
+    .card:nth-child(even)::before {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-width: 5px 5px 5px 0;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .card:first-child::before {
+      border-top: 0;
+      border-top-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(odd)::before {
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(even)::before {
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      background: var(--accent-color); /* Light Beige */
+      color: var(--font-color);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--background-color);
+      border-radius: 50%;
+      border: 3px solid var(--primary-color);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -25px;
+      transition: all 0.3s ease;
+    }
+
+    /* Adjust bullet point position for even cards */
+    .card:nth-child(even) > .info > .title::before {
+      left: auto;
+      right: -25px;
+    }
+
+    /* Add hover effects */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Smooth transition for bullet points */
+    .title::before {
+      transition: all 0.3s ease;
+    }
+
+    .info p {
+      margin-top: 10px;
+    }
+    /* Timeline heading */
+.timeline-heading {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to create space between the heading and the cards */
+  color: var(--accent-color); /* Adjust color if needed */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="timeline">
+    <h1 class="timeline-heading">Data Analyst Roadmap</h1>
+    <!-- Rest of the content -->
+  <div class="timeline">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 1: Develop a Strong Foundation in Statistics and Mathematics</h3>
+          <p>Start by mastering the fundamentals of statistics and mathematics, including probability, algebra, and calculus. <br>  <br>
+            Learn statistical concepts such as descriptive statistics, hypothesis testing, regression analysis, and data distributions.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 2: Acquire Technical Skills</h3>
+          <p>Learn programming languages commonly used in data analysis such as Python or R. These languages have extensive libraries and frameworks specifically designed for data analysis. <br> <br>
+            Familiarize yourself with data manipulation and analysis libraries such as Pandas (Python) or dplyr (R). <br> <br>
+            Gain proficiency in SQL (Structured Query Language) for querying and managing databases, as data analysts often work with large datasets stored in databases.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 3: Data Visualization</h3>
+          <p>Learn data visualization techniques to effectively communicate insights from data.  <br> <br>
+            Familiarize yourself with visualization libraries such as Matplotlib, Seaborn (Python), ggplot2 (R), or Tableau for creating informative and visually appealing charts, graphs, and dashboards.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 4: Practice with Real-world Data</h3>
+          <p>Work on projects that involve analyzing real-world datasets. This could include publicly available datasets or datasets from your own field of interest. <br> <br>
+            Participate in online competitions or challenges such as those on Kaggle to gain experience and exposure to different types of data analysis problems.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 5: Continuous Learning and Skill Enhancement</h3>
+          <p>Stay updated with the latest trends, tools, and techniques in data analysis by reading blogs, following industry experts on social media, and participating in online courses, webinars, and workshops. <br> <br>
+            Consider pursuing advanced certifications or degrees in data analysis or related fields to deepen your knowledge and enhance your credentials.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

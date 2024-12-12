@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Google Step Intern Roadmap</title>
+  <style>
+    :root {
+      --primary-color: #0B60B0;
+      --background-color: #40A2D8;
+      --accent-color: #F0EDCF;
+      --font-color: #000000;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://e0.pxfuel.com/wallpapers/336/16/desktop-wallpaper-gradient-blue-pastel-blue-gradient.jpg');
+      color: var(--font-color);
+      font-family: var(--font);
+      display:flex;
+      background-size:cover;
+      background-position:center ;
+      justify-content: center;
+      padding: 20px;
+      margin: 0; /* Add this to remove default body margin */
+    }
+
+    .timeline {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+      height: 300px;
+      position: sticky; /* Make the timeline box sticky */
+      top: 350px; /* Stick to the top of the viewport */
+      z-index: 1; /* Ensure it appears above other content */
+    }
+
+    
+    .timeline1 {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+      
+      position: sticky; /* Make the timeline box sticky */
+      top: 0; /* Stick to the top of the viewport */
+      z-index: 1; /* Ensure it appears above other content */
+    }
+
+    .img{
+        width: 350px;
+        align-items: center;
+        
+    }
+
+    .card {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child(even) {
+      padding: 30px 30px 30px 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      border: solid var(--accent-color);
+    }
+
+    .card:nth-child(odd)::before {
+      left: 0px;
+      top: -4.5px;
+      bottom: -4.5px;
+      border-width: 5px 0 5px 5px;
+      border-radius: 50px 0 0 50px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+
+    .card:nth-child(even)::before {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-width: 5px 5px 5px 0;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .card:first-child::before {
+      border-top: 0;
+      border-top-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(odd)::before {
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(even)::before {
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      background: var(--accent-color); /* Light Beige */
+      color: var(--font-color);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--background-color);
+      border-radius: 50%;
+      border: 3px solid var(--primary-color);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -25px;
+      transition: all 0.3s ease;
+    }
+
+    /* Adjust bullet point position for even cards */
+    .card:nth-child(even) > .info > .title::before {
+      left: auto;
+      right: -25px;
+    }
+
+    /* Add hover effects */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Smooth transition for bullet points */
+    .title::before {
+      transition: all 0.3s ease;
+    }
+
+    .info p {
+      margin-top: 10px;
+    }
+    /* Timeline heading */
+.timeline-heading {
+  text-align: center;
+  top: 50%;
+  padding: 20px;
+  margin-bottom: 20px; /* Add margin to create space between the heading and the cards */
+  color: var(--accent-color); /* Adjust color if needed */
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="timeline">
+    <h1 class="timeline-heading">Google Step Intern Roadmap</h1>
+    <!-- Rest of the content --> <t></t>\\
+    <img class="img" src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*3L7BJpqvR6Z07rEAG7M9OA.png" alt="step intern">
+    
+  <div class="timeline1">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 1: Build a Strong Foundation</h3>
+          <p>Focus on developing strong coding skills in languages like Python, Java, or C++. <br><br>
+            Learn and practice data structures and algorithms extensively, as they form the backbone of technical interviews. <br> <br>
+            Familiarize yourself with key concepts in computer science and software engineering.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 2: Gain Relevant Experience</h3>
+          <p>Participate in coding competitions like Google Code Jam, Google Kick Start, or ACM ICPC to hone your problem-solving abilities. <br><br>
+            Contribute to open-source projects on platforms like GitHub to showcase your coding skills and collaboration abilities. <br><br>
+            Pursue internships or projects that align with Google's areas of interest, such as software development, machine learning, or web development.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 3: Prepare for the Interview</h3>
+          <p>Study Google's interview process and the types of questions typically asked in technical interviews. <br> <br>
+            Practice coding interview questions on platforms like LeetCode, HackerRank, or CodeSignal. <br> <br>
+            Prepare for behavioral interviews by reflecting on your experiences, strengths, and areas of improvement.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 4: Apply Strategically</h3>
+          <p>Connect with current and former Google employees on platforms like LinkedIn and attend networking events, career fairs, or tech conferences where Google recruiters might be present. <br> <br>
+            Join Google-related communities and forums to stay updated on internship opportunities, interview experiences, and company insights. <br> <br>
+            Engage with Google's online resources, such as Google's Tech Dev Guide and Google's blog, to stay informed about the company's culture, projects, and technologies.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 5: Specialize and Continuously Learn</h3>
+          <p>Tailor your resume and cover letter to highlight relevant experiences and skills that align with Google's internship requirements. <br> <br>
+            Apply for the Google STEP internship through the official Google Careers website or university recruiting channels. <br> <br>
+            Follow up on your application and be prepared for multiple rounds of interviews, including technical assessments and behavioral interviews. <br> <br>
+            Stay persistent and continue to improve your skills and experiences, even if you don't succeed in your first attempt.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>S

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Sign Up</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <form id="signin-form" action="signin.php" method="post">
+                        <div class="group">
+                            <label for="username" class="label" >Username</label>
+                            <input id="username" type="text" name="username" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="password" class="label" >Password</label>
+                            <input id="password" type="password" name="password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <button type="submit" class="button">Sign In</button>
+                        </div>
+                    </form>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-2">Not a member yet? <a href="#signup">Sign Up</a></label>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <form id="signup-form" action="signup.php" method="post" onsubmit="return validateForm()">
+                        <div class="group">
+                            <label for="signup-username" class="label" >Username</label>
+                            <input id="signup-username" type="text" name="username" class="input" required>
+                        </div>
+                        <div class="group">
+                            <label for="signup-password" class="label" required>Password</label>
+                            <input id="signup-password" type="password" name="password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="signup-repeat-password" class="label" >Repeat Password</label>
+                            <input id="signup-repeat-password" type="password" name="confirm_password" class="input" data-type="password" required>
+                        </div>
+                        <div class="group">
+                            <label for="signup-email" class="label" required>Email Address</label>
+                            <input id="signup-email" type="text" name="email" class="input" required>
+                        </div>
+                        <div class="group">
+                            <button type="submit" class="button">Sign Up</button>
+                        </div>
+                    </form>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member? <a href="#signin">Sign In</a></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="validation.js"></script>
+    <script>
+        function validateForm() {
+            var username = document.getElementById("signup-username").value;
+            var email = document.getElementById("signup-email").value;
+            var password = document.getElementById("signup-password").value;
+            var confirm_password = document.getElementById("signup-repeat-password").value;
+
+            // Validate email format
+            var emailRegex = /^\S+@\S+\.\S+$/;
+            if (!emailRegex.test(email)) {
+                alert("Invalid email format");
+                return false;
+            }
+
+            // Validate password length
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long");
+                return false;
+            }
+
+            // Validate password match
+            if (password !== confirm_password) {
+                alert("Passwords do not match");
+                return false;
+            }
+
+            // Additional validations can be added here if needed
+
+            return true;
+        }
+    </script>
+</body>
+</html>

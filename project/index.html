@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suit Up - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #080808;
+            background: black;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        header {
+            position: relative;
+            overflow: hidden;
+            padding: 100px 0;
+            text-align: center;
+            background:url('mat.jpeg');
+            display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      position: relative;
+
+        }
+        
+        header::before,
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        header::before {
+            background-image: url('https://raw.githubusercontent.com/mdn/css-examples/90f0e228592bbfb013132ea87d9ff64a2d4ff5d9/css-grid-1/media/grid-header-overlay.png');
+            background-size: 200% auto;
+            animation: animateBackground 20s linear infinite;
+        }
+        
+        header::after {
+            background-image: url('https://raw.githubusercontent.com/mdn/css-examples/90f0e228592bbfb013132ea87d9ff64a2d4ff5d9/css-grid-1/media/grid-header-overlay-2.png');
+            background-size: 200% auto;
+            animation: animateBackground 15s linear infinite;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .header-content:hover {
+            transform: scale(1.2);
+        }
+        
+        .header-content h1 {
+            margin: 0;
+            font-size: 48px;
+            color: #fff;
+        }
+        
+        .header-content p {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        nav {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #495057;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        .jumbotron {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .jumbotron img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        h1, h2, h3 {
+            margin-top: 0;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .feature {
+            flex: 0 0 calc(33.33% - 20px);
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .feature img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        
+        .feature .content {
+            padding: 20px;
+        }
+        
+        .feature .content h3,
+        .feature .content p {
+            text-align: center;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        .feature h3 {
+            margin-top: 0;
+        }
+        
+        .feature p {
+            color: #6c757d;
+        }
+        
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        @keyframes animateBackground {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .header-content {
+            background: url('ombre.jpeg');
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header-content h1,
+        .header-content p {
+            margin: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="gradient-text">Suit Up</h1>
+            <p>Unlock your career potential with our tailored algorithms and step-by-step guides.</p>
+        </div>
+    </header>
+    
+    <nav>
+        
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="image-column">
+                <img src="img1.jpeg" alt="Image 1">
+            </div>
+            
+            <h2 id="about">Welcome to Job Profile Algorithms</h2>
+            <p>On our job profile algorithm website, we offer a comprehensive roadmap tailored to your career aspirations, whether you're aiming for a specific job role or preparing for an internship. Our platform guides you through every step of the journey, providing detailed insights and actionable strategies to navigate the competitive landscape of your desired industry. From identifying key skills and qualifications to mastering interview techniques and building a standout portfolio, our roadmap is designed to empower you with the knowledge and resources needed to succeed. Whether you're a seasoned professional seeking advancement or a student embarking on your career journey, our platform equips you with the tools to achieve your goals and unlock new opportunities.</p>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <img src="img2.jpeg" alt="Your Image">
+                <div class="content">
+                    <h3><a href="jobprofile.html" target="_blank">Explore Job Profiles</a></h3>
+                    <p>Discover detailed algorithms and guides tailored to various job profiles across different industries.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="img11.png" alt="Your Image">
+                <div class="content">
+                    <h3><a href="respage.html" target="_blank">Personalized Recommendations</a></h3>
+                    <p>Receive personalized recommendations based on your skills, experience, and career aspirations.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://e0.pxfuel.com/wallpapers/190/1015/desktop-wallpaper-polymer-brochure-thumbnail.jpg" alt="Your Image">
+                <div class="content">
+                    <h3><a href="updates.html" target="_blank">Stay Updated</a></h3>
+                    <p>Stay informed about the latest industry trends, technologies, and job market insights to stay ahead in your career.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8GGral6ZqQCdXJ08IseMaWV4wk6jlKtrEqA&s" alt="Your Image">
+                <div class="content">
+                    <h3> <a href="internship.html" target="_blank">Internship Sniper</a></h3>
+                    <p>Find the best internship opportunities to gain valuable experience and kickstart your career.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contact">
+        <p>Contact us at:stepup@gmail.com<br>Help no:+1245362712</p>
+        
+        <p>&copy; 2024 Job Profile Algorithms. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

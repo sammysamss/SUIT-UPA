@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Developer Career Steps</title>
+  <style>
+    :root {
+      --primary-color: #0B60B0;
+      --background-color: #40A2D8;
+      --accent-color: #F0EDCF;
+      --font-color: #000000;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--background-color);
+      color: var(--font-color);
+      font-family: var(--font);
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .timeline {
+      background: var(--primary-color);
+      margin: 20px auto;
+      padding: 20px;
+    }
+
+    .card {
+      position: relative;
+      max-width: 400px;
+    }
+
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child…
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Software Developer Career Steps</title>
+  <style>
+    :root {
+      --primary-color: #0B60B0;
+      --background-color: #40A2D8;
+      --accent-color: #F0EDCF;
+      --font-color: #000000;
+      --font: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: url('https://e0.pxfuel.com/wallpapers/336/16/desktop-wallpaper-gradient-blue-pastel-blue-gradient.jpg');
+      color: var(--font-color);
+      font-family: var(--font);
+      display:flex;
+      background-size:cover;
+      background-position:center ;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .timeline {
+      background:#000040;
+      margin: 20px auto;
+      padding: 20px;
+    
+    }
+
+    .card {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .card:nth-child(odd) {
+      padding: 30px 0 30px 30px;
+    }
+    .card:nth-child(even) {
+      padding: 30px 30px 30px 0;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      width: 50%;
+      border: solid var(--accent-color);
+    }
+
+    .card:nth-child(odd)::before {
+      left: 0px;
+      top: -4.5px;
+      bottom: -4.5px;
+      border-width: 5px 0 5px 5px;
+      border-radius: 50px 0 0 50px;
+    }
+
+    @media only screen and (max-width: 400px) {
+      .card:nth-child(odd)::before {
+        top: -5px;
+        bottom: -5px;
+      }
+    }
+
+    .card:nth-child(even)::before {
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border-width: 5px 5px 5px 0;
+      border-radius: 0 50px 50px 0;
+    }
+
+    .card:first-child::before {
+      border-top: 0;
+      border-top-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(odd)::before {
+      border-bottom: 0;
+      border-bottom-left-radius: 0;
+    }
+
+    .card:last-child:nth-child(even)::before {
+      border-bottom: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      background: var(--accent-color); /* Light Beige */
+      color: var(--font-color);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+      color: var(--primary-color);
+      position: relative;
+    }
+
+    .title::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      background: var(--background-color);
+      border-radius: 50%;
+      border: 3px solid var(--primary-color);
+      top: 50%;
+      transform: translateY(-50%);
+      left: -25px;
+      transition: all 0.3s ease;
+    }
+
+    /* Adjust bullet point position for even cards */
+    .card:nth-child(even) > .info > .title::before {
+      left: auto;
+      right: -25px;
+    }
+
+    /* Add hover effects */
+    .card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
+    }
+
+    /* Smooth transition for bullet points */
+    .title::before {
+      transition: all 0.3s ease;
+    }
+
+    .info p {
+      margin-top: 10px;
+    }
+    /* Timeline heading */
+.timeline-heading {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin to create space between the heading and the cards */
+  color: var(--accent-color); /* Adjust color if needed */
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="timeline">
+    <h1 class="timeline-heading">Product Manager Roadmap</h1>
+    <!-- Rest of the content -->
+  
+  
+  <div class="timeline">
+    <div class="outer">
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 1: Understand the Role and Responsibilities</h3>
+          <p>Learn about the role of a product manager and their responsibilities, which typically include product strategy, roadmap planning, feature prioritization, and cross-functional coordination.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 2: Develop Business Acumen</h3>
+          <p>Gain a strong understanding of business fundamentals, including market analysis, customer segmentation, competitive analysis, and financial metrics. <br> <br>
+            Learn about business models, revenue streams, and how products fit within the broader business strategy.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 3: Learn Communication and Stakeholder Management</h3>
+          <p>Improve communication skills, both verbal and written, to effectively convey ideas, priorities, and decisions. <br> <br>
+            Practice stakeholder management by collaborating with cross-functional teams such as engineering, design, marketing, and sales.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 4: Gain Technical Understanding</h3>
+          <p>Acquire a basic understanding of technical concepts and development processes, including Agile methodologies, software development lifecycle, and basic coding principles. <br> <br>
+            This knowledge will help you communicate effectively with engineering teams and make informed decisions about product features and technical requirements.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h3 class="title">Step 5: Build and Launch Products</h3>
+          <p>Gain hands-on experience by working on projects that involve building and launching products. <br> <br>
+            Participate in product development cycles from ideation to launch, and learn from both successes and failures. <br> <br>
+            Seek feedback from users and iterate on product features to improve the user experience and drive product growth.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
